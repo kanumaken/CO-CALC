@@ -5,25 +5,24 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class calculator : Page
+public partial class calculator : System.Web.UI.Page
 {
-    protected void Page_Load(object sender, EventArgs e)
+    public partial class Default : System.Web.UI.Page
     {
-        // Page load logic (if needed)
-    }
+        protected void Page_Load(object sender, EventArgs e)
+        {
+        }
 
-    protected void btnCalculate_Click(object sender, EventArgs e)
-    {
-        string electricity = txtElectricity.Text;
-     
+        protected void btnCalculate_Click(object sender, EventArgs e)
+        {
             if (IsValidInput())
             {
-            double electricityw = Convert.ToDouble(electricity); 
+                double electricity = Convert.ToDouble(txtElectricity.Text);
                 double energy = Convert.ToDouble(txtEnergy.Text);
                 double waste = Convert.ToDouble(txtWaste.Text);
                 double mileage = Convert.ToDouble(txtMileage.Text);
 
-                double electricityCarbon = CalculateElectricityCarbon(electricityw);
+                double electricityCarbon = CalculateElectricityCarbon(electricity);
                 double energyCarbon = CalculateEnergyCarbon(energy);
                 double wasteCarbon = CalculateWasteCarbon(waste);
                 double transportationCarbon = CalculateTransportationCarbon(mileage);
@@ -70,4 +69,5 @@ public partial class calculator : Page
                 && Double.TryParse(txtWaste.Text, out waste) && waste >= 0
                 && Double.TryParse(txtMileage.Text, out mileage) && mileage >= 0;
         }
+    }
 }
