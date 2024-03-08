@@ -3,7 +3,7 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         body {
-    background-image: url('green.png');
+    background-image: url('2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,8 +36,8 @@
         .blurred-background {
             background-image: url('green,png'); /* Specify your background image */
             background-size: cover; /* Ensure the background image covers the entire element */
-            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            backdrop-filter: blur(0px); /* Apply a blur effect to the background */
+            -webkit-backdrop-filter: blur(0px); /* For Safari */
             padding: 50px;
             text-align: center;
             border-radius: 10px;
@@ -78,9 +78,9 @@
         /* Column styles */
         .col-md-4 {
             width: 50%;
-            margin: 50px auto; /* Center the container vertically and horizontally */
+            margin: 20px ; /* Center the container vertically and horizontally */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+            background-color: rgba(255, 255, 255, 3); /* Transparent white background */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
@@ -111,7 +111,7 @@
     </style>
 
     <div class="blurred-background">
-       <img src="EIA.png" alt="EIA Logo" class="eia-logo">
+       <img src="4.jpg" alt="EIA Logo" class="eia-logo" height="250" width="1000">
         <p> </p>
         <p class="lead"></p>
         <p><a href="/Account/Login" class="btn btn-primary btn-lg">GET STARTED &raquo;</a></p>

@@ -10,11 +10,11 @@
     <!-- Custom CSS -->
     <style>
         /* Common CSS styles for the login page */
-        body {
+        .row {
+            background-image: url('green.png');
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url('1.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -149,8 +149,4 @@
             </section>
         </div>
     </div>
-
-   </body>
-</html>
-
 </asp:Content>

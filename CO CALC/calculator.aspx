@@ -8,17 +8,18 @@
     <style>
         body{
             font-family: Arial, sans-serif;
+            font-weight:bolder;
             background-image: url('green.png');
             background-size: cover;
             background-position: center;
             background-attachment: fixed; /* Keeps the background image fixed while scrolling */
-            color: #fff;
+            color:black;
         }
         .container {
             width: 50%;
             margin: 50px auto; /* Center the container vertically and horizontally */
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.3); /* Transparent white background */
+            background-color: rgba(255, 255, 255, 0.6); /* Transparent white background */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
         }
