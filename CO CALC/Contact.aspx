@@ -3,23 +3,24 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <style>
         body{
-    font-family: Arial, sans-serif;
-    background-image: url('green.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+            font-family: Arial, sans-serif;
+            font-style:oblique;
+            font-weight:800;
+            background-image: url('green.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Keeps the background image fixed while scrolling */
    
 
         }
         .container{
-            font-family: Arial, sans-serif;
-            background-image: url('green,png'); /* Specify your background image */
-            background-size: cover; /* Ensure the background image covers the entire element */
-            backdrop-filter: blur(10px); /* Apply a blur effect to the background */
-            -webkit-backdrop-filter: blur(10px); /* For Safari */ 
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.3);
+
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+
         }
     </style>
 
@@ -28,13 +29,13 @@
         <div class="contact-form">
             
                 <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required><br />
 
                 <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required><br />
 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <textarea id="message" name="message" rows="4" required></textarea><br />
 
                 <input type="submit" value="Submit">
             
